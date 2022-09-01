@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Studying Planets</title>
+  </head>
+  <body>
+    <a name="home"></a>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar">
+        <a class="navbar-brand" href=""><i class="bi bi-globe2" style="font-size: 1.5rem;"></i> Planets</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="bi bi-list" style="font-size: 2rem; color: white;"></i></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#card">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collapse">Collapse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tabela">Tabela</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Informações -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>O que São Planetas?</h3>
+            <p>Os Planetas são corpos celestes sem luz e calor próprios, sólidos, arredondados e com gravidade própria, os quais giram em torno de uma estrela maior (órbita livre), que no caso do planeta Terra é o Sol.</p>
+          </div>
+          <div class="col-md-6">
+            <p>A cosmologia calcula que os planetas do Sistema Solar tenham se formado há aproximadamente 4,6 bilhões de anos. Entre outras teorias, os cientistas acham que tudo começou com uma explosão de gases e poeira cósmica, que teria formado uma nuvem e dessa nuvem teria surgido pequenos corpos sólidos, dos quais deram origem à formação de galáxias, que são aglomerados gigantescos de estrelas, planetas, satélites, asteroides etc.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Card -->
+            <div class="container">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="./img/Terra.jpeg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Terra</h4>
+                  <p class="card-text">O planeta Terra é o planeta habitado por nós, seres vivos. Conhecido também como planeta água.</p>
+                  <!-- Button to Open the Modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                    Outra Foto
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- Card -->
+            <a name="card"></a>
+            <div class="container">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="./img/Marte.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Marte</h4>
+                  <p class="card-text">Marte é chamado de planeta vermelho em virtude da grande concentração de óxido de ferro no solo.</p>
+                  <!-- Button to Open the Modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                    Outra Foto
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- Card -->
+            <div class="container">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="./img/Jupter.jpeg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Júpiter</h4>
+                  <p class="card-text">Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa.</p>
+                  <!-- Button to Open the Modal -->
+        <a name="collapse"></a>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+                    Outra Foto
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- collapse -->
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              Sol
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              O Sol é a estrela central do Sistema Solar. Todos os outros corpos do Sistema Solar, como planetas, planetas anões, asteroides, cometas e poeira, bem como todos os satélites associados a estes corpos, giram ao seu redor. Responsável por 99,86% da massa do Sistema Solar, o Sol possui uma massa 332 900 vezes maior do que a da Terra, e um volume 1 300 000 vezes maior do que o do nosso planeta.
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              Mercúrio
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Mercúrio é o menor e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar. Mercúrio completa três rotações em torno de seu eixo a cada duas órbitas. 
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+              Vénus
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Vénus é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando-o a cada 224,7 dias. Recebeu seu nome em homenagem à deusa romana do amor e da beleza Vénus, equivalente a Afrodite. Depois da Lua, é o objeto mais brilhante do céu noturno, atingindo uma magnitude aparente de -4,6, o suficiente para produzir sombras
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFor">
+              Terra
+            </a>
+          </div>
+          <div id="collapseFor" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema Solar. É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul. Lar de milhões de espécies de seres vivos,[13] incluindo os humanos, a Terra é o único corpo celeste onde é conhecida a existência de vida. O planeta formou-se há 4,56 bilhões de anos.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+              Marte
+            </a>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem ao deus romano da guerra, muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+              Júpiter
+            </a>
+          </div>
+          <div id="collapseSix" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol.[11] Possui menos de um milésimo da massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+              Saturno
+            </a>
+          </div>
+          <div id="collapseSeven" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar atrás de Júpiter. Pertencente ao grupo dos gigantes gasosos, possui cerca de 95 massas terrestres e orbita a uma distância média de 9,5 unidades astronômicas.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+              Urano
+            </a>
+          </div>
+          <div id="collapseEight" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Urano é o sétimo planeta a partir do Sol, o terceiro maior e o quarto mais massivo dos oito planetas do Sistema Solar. Foi nomeado em homenagem ao deus grego do céu, Urano. Embora seja visível a olho nu em boas condições de visualização, não foi reconhecido pelos astrônomos antigos como um planeta devido a seu pequeno brilho e lenta órbita.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+              Netuno
+            </a>
+          </div>
+          <div id="collapseNine" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Netuno é o oitavo planeta do Sistema Solar, o último a partir do Sol desde a reclassificação de Plutão para a categoria de planeta anão, em 2006. Pertencente ao grupo dos gigantes gasosos, possui um tamanho ligeiramente menor que o de Urano, mas maior massa, equivalente a 17 massas terrestres.
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Terra</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <img src="./img/-Terra.png" alt="Terra">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Marte</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <img src="./img/-Marte.jfif" alt="Marte">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Júpiter</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <img src="./img/Jupter.jpeg" alt="Jupter">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabela -->
+      <a name="tabela"></a>
+      <div class="container mt-3">
+        <h2>Tabela - Sistema Solar</h2> 
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <br>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Posição (Sistema Solar)</th>
+              <th>Temperatura média (C°)</th>
+              <th>Período Orbital</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Mercúrio</td>
+              <td>1º</td>
+              <td>427 (C°)</td>
+              <td>88 dias</td>
+            </tr>
+            <tr>
+              <td>Vénus</td>
+              <td>2º</td>
+              <td>461 (C°)</td>
+              <td>224 dias</td>
+            </tr>
+            <tr>
+              <td>Terra</td>
+              <td>3º</td>
+              <td>14 (C°)</td>
+              <td>365 dias</td>
+            </tr>
+            <tr>
+              <td>Marte</td>
+              <td>4º</td>
+              <td>-63 (C°)</td>
+              <td>687 dias</td>
+            </tr>
+            <tr>
+              <td>Júpiter</td>
+              <td>5º</td>
+              <td>-108 (C°)</td>
+              <td>4.331 dias</td>
+            </tr>
+            <tr>
+              <td>Saturno</td>
+              <td>6º</td>
+              <td>-139 (C°)</td>
+              <td>10.759 dias</td>
+            </tr>
+            <tr>
+              <td>Urano</td>
+              <td>7º</td>
+              <td>-220 (C°)</td>
+              <td>30.799 dias</td>
+            </tr>
+            <tr>
+              <td>Netuno</td>
+              <td>8º</td>
+              <td>-223 (C°)</td>
+              <td>60.190 dias</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
